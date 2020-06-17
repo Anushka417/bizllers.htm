@@ -87,9 +87,11 @@ li a:hover:not(.active) {
         }
 
        table {
-
+              
              border-collapse: collapse;
              width: 300%;
+             overflow-y:scroll;
+             
             }
 
        th {
@@ -112,17 +114,17 @@ background:grey;}
 <body>
 
   <nav>
-  <div class="hbar" style="position: top; margin-left:0%;"><ul>
+  <div class="header bg-light"  style="position: sticky; margin-left:0%;height: 50px;"><ul>
   <li><a class="active" href="#home"><i class="fa fa-bars" style="font-size: 30px;"></i></a></li></ul>
-    <img src="C:\Users\ANUSHKA\Desktop\company_logo-2.png" alt="company_logo" height="36%" width="36%" style="margin-left: 5%">
+    <img src="C:\Users\ANUSHKA\Desktop\company_logo-2.png" alt="company_logo" height="60%" width="40%" style="margin-left: 5%">
     <div style="float:right; font-size: 16px;  ">
-      RENEE MCKELVEY&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user-circle-o" style="float: right;font-size: 30px;">
+     <b> RENEE MCKELVEY</b>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-user-circle-o" style="float: right;font-size: 30px;">
         </i><br> Account Settings 
     </div>
 
 
 
-    <hr>
+  
   </div>
   <div class="vbar"style="position:fixed;margin:0px">
 <ul>
@@ -137,7 +139,7 @@ background:grey;}
 </nav>
   <div class="container ">
     <div class="row">
-      <div class= "col-12 col-sm-4 col-md-3"style="margin-left:1%;margin-top:5%;margin-bottom: 10%;">
+      <div class= "col-12 col-sm-3 col-md-3"style="margin-left:1%;margin-top:5%;margin-bottom: 10%;">
          <h1 style="color: grey;"> User List </h1>
            
             <div class="search"> 
@@ -206,13 +208,13 @@ background:grey;}
       
       <div class="col-sm-8">
         <h3 style="color: grey;">New User Details  </h3><hr>
-          <input type="text" name="username" placeholder="Username">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" placeholder="Email">
+          <input type="text" name="username" placeholder="Username"style="padding: 3px; opacity: 0.7; border: 2px solid silver" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" placeholder="Email"style="padding: 3px; opacity: 0.7; border: 2px solid silver" required>
           <br><br>
           <form>
-          <input type="text" name="firstname" placeholder="First Name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname" placeholder="Last Name">
+          <input type="text" name="firstname" placeholder="First Name"style="padding: 3px; opacity: 0.7; border: 2px solid silver" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname" placeholder="Last Name"style="padding: 3px; opacity: 0.7; border: 2px solid silver" required>
       
            <br><br>
-           <select id="role" name="role">
+           <select id="role" name="role" style=" opacity: 0.7; border: 2px solid silver;" required>
              <option>Role</option>
              <option>Admin</option>
              <option>Developer</option>
@@ -222,8 +224,8 @@ background:grey;}
              <br><br>
           <input type="checkbox" name="checkbox"><level for="checkbox">Send email confirmation</level>
           <br>
-          <br><button style="padding: 2px 8px 2px 8px;background-color: #4B0082;">Add User</button>
-          &nbsp;&nbsp;&nbsp;<input class="button" type="button"style="padding: 2px 4px 2px 4px;" onclick="window.location.replace('bizlers.htm')" value="Cancel"></div></form>
+          <br><button style="padding: 2px 8px 2px 8px;background-color:blue;margin: 10px;"class="btn btn-warning" >Add User</button>
+          &nbsp;&nbsp;&nbsp;<input class="button" type="button"style="padding: 2px 4px 2px 4px;margin: 10px" onclick="window.location.replace('bizlers.htm')" value="Cancel"></div></form>
            <div class="col-sm-4">
              <h3 style="color: grey;"> Profile Picture </h3><hr>
                 
@@ -243,7 +245,9 @@ background:grey;}
     </div>
 
   </div> 
-  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
 </body>
 </html>
